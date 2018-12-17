@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funky nodes</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="testDataGenerator.js"></script>
+    <script src="funkyNodes-2.js"></script>
+    <script src="testScenarios.js"></script>
+</head>
+<body style="padding: 50px;">
+<div style="width: 49%; float: left">
+    <h3 id="set1">Set 1: </h3>
+
+    <input id="set1-input" type="text">
+    <button onclick="addToSet1()">Add to set 1</button>
+    <button onclick="clearSet1()">Clear set 1</button>
+
+    <h3 id="set2">Set 2: </h3>
+
+    <input id="set2-input" type="text">
+    <button onclick="addToSet2()">Add to set 2</button>
+    <button onclick="clearSet2()">Clear set 2</button>
+
+    <h3>Merge result</h3>
+    <div id="merged"></div>
+</div>
+
+<div style="width: 49%; float: right">
+    <h3>Test scenarios</h3>
+    <input id="fileLoad" type="file">
+    <div id="testResult"></div>
+</div>
+</body>
+</html>
